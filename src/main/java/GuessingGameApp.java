@@ -46,7 +46,8 @@ public class GuessingGameApp {
                                 "- To access this help menu, type '0'\n" +
                                 "- To quit the game, type '-1'\n");
             } else if (userGuess == -1){
-                // exit the application
+                System.out.println("Come back again soon!");
+                break;
             } else {
                 remainingGuesses--;
             }

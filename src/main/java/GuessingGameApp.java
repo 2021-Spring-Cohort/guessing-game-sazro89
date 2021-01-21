@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class GuessingGameApp {
     public static void main(String[] args) {
         // Initialize values
-        int numberToGuess = 7;
+        int numberToGuess = (int) (Math.random() * 10) + 1;
         int remainingGuesses = 2;
         int userGuess;
 

@@ -14,7 +14,7 @@ public class GuessingGameApp {
     public static void main(String[] args) {
         // Initialize values
         int numberToGuess = (int) (Math.random() * 10) + 1;
-        int remainingGuesses = 2;
+        int remainingGuesses = 3;
         int userGuess;
 
         // Initialize input
@@ -34,7 +34,7 @@ public class GuessingGameApp {
                         "  \\ // _ \\| | | | \\ \\ /\\ / / | '_ \\| | |\n" +
                         "  | | (_) | |_| |  \\ V  V /| | | | |_|_|\n" +
                         "  \\_/\\___/ \\__,_|   \\_/\\_/ |_|_| |_(_|_)\n" +
-                        "Want to play again?");
+                        "                  [Want to play again?]");
                 break;
             } else if (userGuess == 0) {
                 System.out.println("***************\n" +
@@ -66,7 +66,7 @@ public class GuessingGameApp {
                     "  \\ // _ \\| | | | | |/ _ \\/ __|/ _ \\      \n" +
                     "  | | (_) | |_| | | | (_) \\__ \\  __/_ _ _ \n" +
                     "  \\_/\\___/ \\__,_| |_|\\___/|___/\\___(_|_|_)\n" +
-                    "Better luck next time...");
+                    "                  [Better luck next time]");
         }
     }
 }

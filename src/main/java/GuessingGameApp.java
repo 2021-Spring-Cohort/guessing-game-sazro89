@@ -20,12 +20,22 @@ public class GuessingGameApp {
         Scanner input = new Scanner(System.in);
 
         // Begin guessing game
-        System.out.print("Please guess a number from the range 1 through 10: ");
+        System.out.print("Please guess a number (input '0' for help): ");
         userGuess = input.nextInt();
 
         // Output
         if (userGuess == numberToGuess) {
             System.out.println("Congratulations, you win!!");
+        } else if (userGuess == 0) {
+            System.out.println(
+                    "***************\n" +
+                    "* How to play *\n" +
+                    "***************\n" +
+                    "- Guess a number in the range 1 through 10\n" +
+                            "- You have two chances to get it correct, or else it's game over :)\n" +
+                            "- After an incorrect guess, you'll get a hint if the number is higher or lower than your guess\n" +
+                            "- To access this help menu, type '0'\n" +
+                            "- To quit the game, type '-1'");
         } else {
             System.out.println("You lose... Better luck next time!");
         }

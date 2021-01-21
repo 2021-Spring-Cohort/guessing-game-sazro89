@@ -50,6 +50,13 @@ public class GuessingGameApp {
                 break;
             } else {
                 remainingGuesses--;
+                if (remainingGuesses > 0) { // the spec says any incorrect guess, but this feels more right
+                    if (userGuess < numberToGuess) {
+                        System.out.println("That's too low, try again!\n");
+                    } else {
+                        System.out.println("That's too high, try again!\n");
+                    }
+                }
             }
         }
         if (remainingGuesses == 0) {
